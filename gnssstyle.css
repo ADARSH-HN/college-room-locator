@@ -1,0 +1,196 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004d7a; /* Darker blue */
+    color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 2.5rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00; /* Gold color on hover */
+}
+
+main {
+    padding: 2rem;
+}
+
+#home {
+    background-color: #005b9f; /* Lighter blue */
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#home h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background-color: #ffcc00; /* Gold color */
+    color: black;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #e6b800; /* Darker gold on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+#locator {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.search-container {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#search, #filter {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#search:focus, #filter:focus {
+    border-color: #005b9f; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 91, 159, 0.5); /* Add a glow effect */
+}
+
+#filter-button {
+    padding: 0.75rem 1.5rem; 
+    border: none;
+    border-radius: 5px;
+    background-color: #005b9f; /* Blue color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#filter-button:hover {
+    background-color: #004d7a; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.no-results {
+    display: none; /* Hidden by default */
+    color: #e74c3c;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#room-list {
+    list-style: none;
+    padding: 0;
+}
+
+#room-list li {
+    background-color: #f0f4f8; /* Light gray background */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#room-list li:hover {
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.room-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.room-details {
+    margin-left: 10px; /* Add space between title and details */
+    font-style: italic; /* Italicize details */
+}
+
+#contact {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#contact h2 {
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: #004d7a; /* Darker blue */
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search, #filter, #filter-button {
+        width: 90%; /* Full width on small screens */
+    }
+
+    #home h1 {
+        font-size: 2rem; /* Smaller font on mobile */
+    }
+}

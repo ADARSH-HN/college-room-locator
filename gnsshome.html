@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Room Locator</title>
+    <link rel="stylesheet" href="gnssstyle.css">
+</head>
+<body>
+    <header>
+        <div class="logo">College Room Locator</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#locator">Locator</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h1>Welcome to Our College</h1>
+            <p>Your go-to place for finding rooms, labs, and teachers.</p>
+            <a href="#locator" class="btn">Find a Room</a>
+        </section>
+
+        <section id="locator">
+            <h2>Room Locator</h2>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search by room, teacher, or subject...">
+                <select id="filter">
+                    <option value="">All Blocks</option>
+                    <option value="A">Block A</option>
+                    <option value="B">Block B</option>
+                    <option value="C">Block C</option>
+                </select>
+                <button id="filter-button">Filter</button>
+            </div>
+            <ul id="room-list"></ul>
+            <div id="no-results" class="no-results">Try different keywords.</div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@college.edu</p>
+            <p>Phone: (123) 456-7890</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 College Name. All rights reserved.</p>
+    </footer>
+
+    <script src="gnsscript.js"></script>
+</body>
+</html>
