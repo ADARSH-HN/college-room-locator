@@ -1,4 +1,8 @@
 /* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -132,16 +136,25 @@ main {
 }
 
 #room-list {
-    list-style: none;
-    padding: 0;
+    display: flex;
+    align-items: center; 
+   list-style: none;
+   gap: 2rem;
+   justify-content: center;
+   flex-wrap: wrap;
+
+   
+
 }
 
 #room-list li {
     background-color: #f0f4f8; /* Light gray background */
-    padding: 1rem;
-    margin-bottom: 1rem;
+    padding: 20px;
+    margin-bottom: 3rem;
     border-radius: 5px;
     transition: transform 0.2s, box-shadow 0.2s;
+    height: 8cm;
+    width: 200px;
 }
 
 #room-list li:hover {
@@ -152,11 +165,15 @@ main {
 .room-title {
     font-weight: bold;
     font-size: 1.2rem;
+    word-wrap: break-word;
+    text-align: center;
+
 }
 
 .room-details {
     margin-left: 10px; /* Add space between title and details */
-    font-style: italic; /* Italicize details */
+     /* Italicize details */
+     text-align:center;
 }
 
 #contact {
@@ -193,4 +210,15 @@ footer {
     #home h1 {
         font-size: 2rem; /* Smaller font on mobile */
     }
+}
+/* Teacher Photo Styles */
+.teacher-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover; /* Ensures the image is cropped neatly */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto; /* Centers the photo */
 }
